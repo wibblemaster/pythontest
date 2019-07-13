@@ -2,6 +2,8 @@
 import SimpleHTTPServer
 import SocketServer
 
+# Very trivial http server
+
 PORT = 8000
 
 # Setup the handler
