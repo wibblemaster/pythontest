@@ -1,16 +1,15 @@
 #!/usr/bin/env python
-import SimpleHTTPServer
-import SocketServer
+import http.server
+import socketserver
 
-# Trivial http server
+"""Just a very simple http server - not for production use!"""
 
 PORT = 8000
 
 # Setup the handler
 
-Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+Handler = http.server.SimpleHTTPRequestHandler
 
-httpd = SocketServer.TCPServer(("", PORT), Handler)
-
-print("serving at port {0}".format(PORT))
-httpd.serve_forever()
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("serving at port", PORT)
+    httpd.serve_forever()
