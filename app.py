@@ -1,8 +1,7 @@
-#!/usr/bin/env python
+"""Just a very simple http server - not for production use!"""
+
 import http.server
 import socketserver
-
-"""Just a very simple http server - not for production use!"""
 
 PORT = 8000
 
