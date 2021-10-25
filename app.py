@@ -5,8 +5,6 @@ import socketserver
 
 PORT = 8000
 
-# TODO: functional update with handler
-
 Handler = http.server.SimpleHTTPRequestHandler
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
