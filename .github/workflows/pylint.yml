@@ -20,3 +20,10 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint `ls -R|grep .py$|xargs`
+    - name: Checking if I can get terraform on this project
+      uses: actions/setup-terraform@v1
+      with:
+        terraform_version: latest
+    - name: Terraform version
+      id: version
+      run: terraform version
