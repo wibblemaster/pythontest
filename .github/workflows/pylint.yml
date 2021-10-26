@@ -21,7 +21,7 @@ jobs:
       run: |
         pylint `ls -R|grep .py$|xargs`
     - name: Checking if I can get terraform on this project
-      uses: actions/setup-terraform@v1
+      uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: latest
     - name: Terraform version
