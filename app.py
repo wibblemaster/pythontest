@@ -13,6 +13,11 @@ def original_changes():
 def some_other_changes():
     """Some other changes"""
     print("Some other stuff/changes")
+    some_other_changes_2()
+
+def some_other_changes_2():
+    """Yet more changes"""
+    print("Some more changes 2")
 
 if __name__ == "__main__":
     main()
