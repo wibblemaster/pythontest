@@ -1,4 +1,8 @@
 #/usr/bin/env python
+"""
+app2 - this is some fancy module what I wrote
+"""
+
 
 def main():
     """
