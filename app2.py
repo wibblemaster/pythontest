@@ -2,7 +2,7 @@
 """
 app2 - this is some fancy module what I wrote
 
-Making some changes that I might want to revert soon
+Making some changes that I might want to revert
 """
 
 def main():
