@@ -21,4 +21,4 @@ def some_other_changes_2():
 
 if __name__ == "__main__":
     main()
-    print("Something that is irrelavant to print")
+    print("Program has terminated...")
